@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>upload</title>
+    <style>
+      .new-button {
+        display: inline-block;
+        font-family: 'Nunito', sans-serif;
+        padding: 8px 12px;
+        cursor: pointer;
+        border-radius: 4px;
+        background-color: black;
+        font-size: 16px;
+        color: #fff;
+      }
+      input[type="file"] {
+        /* position: absolute; */
+        /* z-index: -1; */
+        top: 6px;
+        left: 0;
+        font-size: 15px;
+        color: rgb(153, 153, 153);
+      }
+      #upload{
+        padding: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        border: none;
+        border-radius: 0.5rem;
+        font-size: large;
+        font-family: 'Nunito', sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="/upload" enctype="multipart/form-data" method="post">
+      <div class="form-group">
+        <input type="file" class="form-control-file new-button" name="uploaded_file" />
+        <br>
+        <br>
+        <input id="upload" type="submit" value="upload" class="btn btn-default" />
+      </div>
+    </form>
+  </body>
+</html>
