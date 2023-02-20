@@ -1,2 +1,2 @@
 # CN-Project-FTP
-computer networks project for semester 5
+Web Application to upload and Download Files
